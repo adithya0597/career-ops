@@ -56,3 +56,22 @@ These modifiers apply ON TOP of the base rubric in `modes/_shared.md`:
 - Federal / clearance roles (H1B blocker)
 - Pure research roles (no production component)
 - Requires relocation outside DFW (hard constraint unless remote)
+
+---
+
+## 2026-04-19 Weekly Review — Scoring Addendum
+
+**Observation window:** 2026-04-10 to 2026-04-16 (40 offers evaluated; 0 applications submitted)
+**False positive rate:** 0% (no entry scored ≥4.0 was subsequently marked SKIP by user)
+
+| Observation | Status | Action |
+|-------------|--------|--------|
+| FDE at AI-native company + H1B confirmed → scores 4.0-4.5 | Calibrated | None |
+| Staff-level -0.2 penalty: blocked Bolt.new (3.8↓), passed Rula Staff (4.6) | Calibrated | None |
+| H1B unconfirmed -0.3: correctly scored Synthflow/Lorikeet/Ascertain as SKIP | Calibrated | None |
+| Domain mismatch (CV, security, biotech) → 3.5-3.8 range → all SKIP | Calibrated | Added title negatives to portals.yml |
+| UJET 3.9 (borderline, H1B unconfirmed mid-size) — just below threshold | Expected | Accept; user can manually override |
+| **0 Applied entries despite 19 Evaluated** | ⚠️ Gap | No scoring fix; user must initiate outreach |
+
+**No weight changes this week.** Scoring overrides from 2026-04-09 remain in effect unchanged.
+The critical gap is application velocity, not scoring accuracy.
