@@ -75,3 +75,31 @@ These modifiers apply ON TOP of the base rubric in `modes/_shared.md`:
 
 **No weight changes this week.** Scoring overrides from 2026-04-09 remain in effect unchanged.
 The critical gap is application velocity, not scoring accuracy.
+
+---
+
+## 2026-05-03 Weekly Review — Scoring Addendum
+
+**Observation window:** 2026-04-20 to 2026-05-03 (49 offers evaluated; 17 Evaluated ≥4.0; 0 applications submitted)
+**False positive rate:** 0% (no entry scored ≥4.0 was subsequently marked SKIP by user)
+**Total tracker:** 89 entries (36 Evaluated, 51 SKIP, 2 user-marked SKIP)
+
+| Observation | Status | Action |
+|-------------|--------|--------|
+| Consulting / IT services / BPO companies consistently score 3.0–3.3 | Pattern confirmed | Add -0.2 modifier (see below) |
+| Cybersecurity / OSINT domain companies score 3.2–3.5 despite valid AI titles | Pattern confirmed | Add -0.2 modifier (see below) |
+| Supply chain / pharma operations domain continues to surface | Pattern confirmed | Add -0.2 modifier (see below) |
+| Hard blockers (location/comp/H1B entity) correctly capped at 1.5/5 | Calibrated | None |
+| 0 Applied entries after 89 evaluations and 3 weekly cycles | ⚠️ Critical | No scoring fix; user must initiate outreach |
+
+### New Modifiers (addendum — do NOT remove prior overrides)
+
+These apply ON TOP of the 2026-04-09 base overrides:
+
+| Condition | Score modifier |
+|-----------|---------------|
+| Company is IT services / consulting / BPO / managed services (not AI-native product) | -0.2 (non-AI-native environment limits growth and H1B likelihood) |
+| Primary domain is cybersecurity / OSINT / pentesting | -0.2 (domain mismatch for LLM/agents/Applied AI archetype) |
+| Primary domain is supply chain / logistics / pharma operations | -0.2 (domain mismatch; not AI-native product) |
+
+**Note:** These modifiers compound with H1B unconfirmed penalty (-0.3). A consulting firm with unconfirmed H1B typically scores -0.5 from penalties alone, landing at 3.0–3.3 on a 4.0 base → correctly auto-SKIP.
