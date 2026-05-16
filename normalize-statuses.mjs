@@ -87,6 +87,12 @@ function normalizeStatus(raw) {
   if (['enviada', 'aplicada', 'applied', 'sent'].includes(lower)) return { status: 'Aplicado' };
   if (['cerrada', 'descartada'].includes(lower)) return { status: 'Descartado' };
   if (['no aplicar', 'no_aplicar', 'skip'].includes(lower)) return { status: 'NO APLICAR' };
+  // English canonical aliases (for English-language sessions)
+  if (['evaluated', 'evaluate'].includes(lower)) return { status: 'Evaluada' };
+  if (['rejected'].includes(lower)) return { status: 'Rechazado' };
+  if (['discarded'].includes(lower)) return { status: 'Descartado' };
+  if (['interview'].includes(lower)) return { status: 'Entrevista' };
+  if (['offer'].includes(lower)) return { status: 'Oferta' };
 
   // Unknown — flag it
   return { status: null, unknown: true };
